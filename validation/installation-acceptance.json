@@ -1,0 +1,81 @@
+{
+  "status": "installed_and_user_selected_uhd_59_94_400_verified",
+  "installation": "private-research/evidence/normal_route_20261012/rec_install_label_probe_20261015T100121091737Z",
+  "volatile_only": true,
+  "automatic_poweroff_off_user_confirmed": true,
+  "receipts": {
+    "fps": {
+      "path": "private-research/evidence/normal_route_20261012/normal_fps_apply_20261015T100422619493Z/journal.json",
+      "status": "apply_verified_and_restored",
+      "payload_sha256": "d137d63b63cb0441838448b7d7a151da0b4173edde8921f6a8d78459a45a5c2a",
+      "operation_verified": {
+        "event": "operation_verified",
+        "policy": "normal_fps",
+        "target": "0x13e1788",
+        "policy_value": "0x7ffffffe",
+        "region_bytes_checked": 65536,
+        "policy_words_checked": 1,
+        "exact_page_tables_restored": true,
+        "resident_code_unchanged": true
+      }
+    },
+    "resource": {
+      "path": "private-research/evidence/normal_route_20261012/normal_resource_apply_20261015T100453087872Z/journal.json",
+      "status": "apply_verified_and_restored",
+      "payload_sha256": "48d98a874f20e93c6ea0592115e99575de3b205cff07672c691f6a38916f8727",
+      "operation_verified": {
+        "event": "operation_verified",
+        "target": "0x2219ed0",
+        "value": "0xe3a00006",
+        "region_bytes_checked": 1048576,
+        "exact_page_tables_restored": true,
+        "resident_code_and_fps_policy_unchanged": true
+      }
+    },
+    "bitrate": {
+      "path": "private-research/evidence/normal_route_20261012/normal_bitrate_apply_20261015T100523063244Z/journal.json",
+      "status": "apply_verified_and_restored",
+      "payload_sha256": "9ef75f9c28cb8757e6b865c70c6d07c2d0f8ef934daa39c1f7099a1b3a8ffda6",
+      "operation_verified": {
+        "event": "operation_verified",
+        "policy": "normal_bitrate",
+        "target": "0x13e13c4",
+        "policy_value": "0x0",
+        "region_bytes_checked": 65536,
+        "policy_words_checked": 1,
+        "exact_page_tables_restored": true,
+        "resident_code_unchanged": true
+      }
+    },
+    "menu": {
+      "path": "private-research/evidence/normal_route_20261012/normal_bitrate_menu_apply_20261015T100551943797Z/journal.json",
+      "status": "apply_verified_and_restored",
+      "payload_sha256": "bed338ffa1d9db32a0f15349531225bb19df23116c68bf70b2c4257db9fc1204",
+      "operation_verified": {
+        "event": "operation_verified",
+        "policy": "normal_bitrate_menu",
+        "target": "0x1525834",
+        "policy_value": "0x1c1f040",
+        "region_bytes_checked": 1048576,
+        "policy_words_checked": 4,
+        "exact_page_tables_restored": true,
+        "resident_code_unchanged": true
+      }
+    }
+  },
+  "selected_59_94_400_user_acceptance": "59.94P and 400Mbps selectable and retained; user exited menu",
+  "new_recording_this_run": false,
+  "settings_readback": {
+    "capture": "private-research/evidence/normal_route_20261012/movie_buffers_reinstall_selected_60p400_20261015T100751451375Z",
+    "resolution": "3840x2160",
+    "frame_rate": "60000/1001",
+    "container_codec": "MOV/H264",
+    "requested_bitrate_mbps": 400,
+    "resource_profile": 6,
+    "native_fps_enum": 6,
+    "idle": true,
+    "boundary_stable": true
+  },
+  "device_session_closed": true,
+  "pending": []
+}

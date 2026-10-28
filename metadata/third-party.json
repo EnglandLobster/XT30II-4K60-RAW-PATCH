@@ -1,0 +1,12 @@
+{
+  "fffw": {
+    "url": "https://github.com/tiredboffin/fffw",
+    "revision": "bedc091e0b54a1a34aaf6929dd08e1db36d13b08",
+    "files": [
+      "ff80/fftlib.py",
+      "ff80/60-fujig.rules"
+    ],
+    "license": "MIT",
+    "modified": false
+  }
+}

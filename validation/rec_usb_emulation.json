@@ -1,0 +1,318 @@
+{
+  "status": "passed",
+  "camera_operations": 0,
+  "cases": 9216,
+  "changed": 45,
+  "hook_sha256": "f18c37abecc5f9dbbc5e27120462c7301c8b88a6c14ac94c8cdfa696fd1b2f1d",
+  "patch_address": "0x2240d84",
+  "original_word": "0xaffffe2",
+  "branch_for_test_arena": "0xbe77164",
+  "examples": [
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 3,
+      "attached": 1,
+      "gate": 1,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            14
+          ]
+        ],
+        [
+          "debug_start",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "debug_init",
+          [
+            35924884,
+            34212692
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 3,
+      "attached": 1,
+      "gate": 0,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "detach_cleanup",
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "debug_stop",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 3,
+      "attached": 0,
+      "gate": 1,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "detach_cleanup",
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          "debug_stop",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 4,
+      "attached": 1,
+      "gate": 1,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            14
+          ]
+        ],
+        [
+          "debug_start",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "debug_init",
+          [
+            35924884,
+            34212692
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 4,
+      "attached": 1,
+      "gate": 0,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "detach_cleanup",
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "debug_stop",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 4,
+      "attached": 0,
+      "gate": 1,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "detach_cleanup",
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          "debug_stop",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 5,
+      "attached": 1,
+      "gate": 1,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            14
+          ]
+        ],
+        [
+          "debug_start",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "debug_init",
+          [
+            35924884,
+            34212692
+          ]
+        ]
+      ]
+    },
+    {
+      "flag": 1,
+      "boot": 7,
+      "phase": 3,
+      "ui": 5,
+      "attached": 1,
+      "gate": 0,
+      "calls": [
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ],
+        [
+          "detach_cleanup",
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "debug_stop",
+          [
+            43,
+            0
+          ]
+        ],
+        [
+          "rtos_control",
+          [
+            60,
+            11
+          ]
+        ]
+      ]
+    }
+  ],
+  "scope": "Only a completed owned REC transition with boot snapshot 7 and UI 3..7 gets the same stock attach behavior as normal boot. f7=0 and original connection gates stay effective; startup byte is never changed.",
+  "limitations": "Offline candidate. RTOS, debug init and USB are stubs; current camera may have rebooted. Does not prove boot snapshot or f7 persistence on the last live attempt."
+}

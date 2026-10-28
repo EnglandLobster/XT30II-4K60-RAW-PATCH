@@ -1,0 +1,132 @@
+[
+  {
+    "name": "rec_lifecycle_hook",
+    "bytes": 836,
+    "sha256": "f18c37abecc5f9dbbc5e27120462c7301c8b88a6c14ac94c8cdfa696fd1b2f1d",
+    "symbols": {
+      "hook_state": 600,
+      "hook_state_pointer": 608,
+      "rec_lifecycle_hook": 0,
+      "usb_attach_allowed": 612,
+      "usb_attach_guard": 796
+    },
+    "sources": {
+      "rec_lifecycle_hook.c": "fbc05698e0f1a91d671c0abaea78eddffdc3b256353e21e1eda33d25c036bab3",
+      "rec_lifecycle_state.S": "52de11765b1e4077e74af4538df2df5902a1b595f986b0d4ba9333b7fcde6824",
+      "rec_lifecycle_hook.ld": "307676ebc8ca7c4c9255ccb37ca680cf963b4830bf7a0153ec4883f9a8c28671"
+    }
+  },
+  {
+    "name": "private_exec_probe",
+    "bytes": 468,
+    "sha256": "fb974e5f6f79b506369bfa269fc42294cf25f766dbe247b8ceb81e6521979364",
+    "symbols": {
+      "private_exec_entry": 112808960,
+      "private_exec_probe": 112809032
+    },
+    "sources": {
+      "private_exec_entry.S": "3cd22206b540ec055a1bc30adc5453e7bdfe9bef0f3fe21c9141da935cc472cc",
+      "private_exec_probe.c": "4d9fdb112de8b27ba09d9a17a1c893b91bd999d9ded9dc32a595e346439b38f7",
+      "private_exec_probe.ld": "4555f70a853802cdfd5210dbef135ac5bb78a37c10001bf63e204862a3800a84"
+    }
+  },
+  {
+    "name": "rec_install_probe",
+    "bytes": 1000,
+    "sha256": "1df5128fb8b6ff6356f9b7bf40dd8e71f55a2a2c717b228ab39240a90e055248",
+    "symbols": {
+      "bootstrap_entry": 112808960,
+      "bootstrap_main": 112809032
+    },
+    "sources": {
+      "ram_bootstrap_entry.S": "da525c3f51f409d80af07aff449d69b9170257d41dfe1fe119ec46ffa0b93584",
+      "rec_install_probe.c": "04344b9d9c6b21592dab9a372cc5df176e75a04d71f1769de26749836bf08e0d",
+      "ram_bootstrap.ld": "3779ab1826df9b2493057ec04a91435085e5dd244e4adb2595a4578c7dadddc5"
+    }
+  },
+  {
+    "name": "rec_install_label_probe",
+    "bytes": 1804,
+    "sha256": "693b8348dd2cc6f7fe0703ee00f4fa65e08d54fd036e71f2679ce22da1b6357d",
+    "symbols": {
+      "bootstrap_entry": 112808960,
+      "bootstrap_main": 112809960,
+      "rec_bootstrap_main": 112809032
+    },
+    "sources": {
+      "ram_bootstrap_entry.S": "da525c3f51f409d80af07aff449d69b9170257d41dfe1fe119ec46ffa0b93584",
+      "rec_install_label_probe.c": "512776e9d0200bba0f861b0cbe9dbf9b22954f983eaa34f4862ba8b28d6f9f9e",
+      "ram_bootstrap.ld": "3779ab1826df9b2493057ec04a91435085e5dd244e4adb2595a4578c7dadddc5"
+    }
+  },
+  {
+    "name": "movie_bitrate_label",
+    "bytes": 512,
+    "sha256": "a91f81228fabaebd44c18faeb7c4654cca17aee77b7696b618ded38fd0ead0d2",
+    "symbols": {
+      "movie_bitrate_record": 29480000,
+      "movie_bitrate_resource": 29480384,
+      "movie_bitrate_width": 29479936
+    },
+    "sources": {
+      "movie_bitrate_label.S": "ef79b15d4d14d87575b724581aa16764ffcecbde1d4b61d5a76e7376381e029c",
+      "movie_bitrate_label.ld": "615bf5aa7210890760d19a753f9cc895150edfef95baea86a0896d8b0cec93cd"
+    }
+  },
+  {
+    "name": "normal_fps_patch",
+    "bytes": 912,
+    "sha256": "d137d63b63cb0441838448b7d7a151da0b4173edde8921f6a8d78459a45a5c2a",
+    "symbols": {
+      "normal_fps_entry": 29484032,
+      "normal_fps_main": 29484132
+    },
+    "sources": {
+      "normal_fps_entry.S": "eba1ed5112aa1d2e315d93ed8ce32d306ba3b2d786a74c3b62690e0c81940653",
+      "normal_fps_patch.c": "f9fd1b653d988519ff03c3e041f55a188e9a20c06b59ea82c3ab46f6592c9b78",
+      "normal_fps_patch.ld": "9147a41aae17c7b8f4d9f064a7330e44402912ef07cecad3b9f8342e7d22e4b1"
+    }
+  },
+  {
+    "name": "normal_resource_patch",
+    "bytes": 892,
+    "sha256": "48d98a874f20e93c6ea0592115e99575de3b205cff07672c691f6a38916f8727",
+    "symbols": {
+      "normal_resource_entry": 29484032,
+      "normal_resource_main": 29484132
+    },
+    "sources": {
+      "normal_resource_entry.S": "c3cfb3bb2852af89455ede2020ebff7b7db8b35be2c5a185ee6c1d76f41c81d9",
+      "normal_resource_patch.c": "f7fedb2d928af2b96f8fcda98009e6c5c40111b56238e84f122415b749599e3f",
+      "normal_resource_patch.ld": "c030b25946c4f2864704371dae308bea2c9e605258e3343b6b5b9c043e0de8ff"
+    }
+  },
+  {
+    "name": "normal_bitrate_patch",
+    "bytes": 1140,
+    "sha256": "9ef75f9c28cb8757e6b865c70c6d07c2d0f8ef934daa39c1f7099a1b3a8ffda6",
+    "symbols": {
+      "normal_bitrate_entry": 29484032,
+      "normal_bitrate_main": 29484132
+    },
+    "sources": {
+      "normal_bitrate_entry.S": "37030a1cb3b07df9b24b0c43a8983f049011ce79d6860d3babbeb1964ccdfb03",
+      "normal_bitrate_patch.c": "2c6f3463fa808542dfe51fde34946bed39b738b73247dd63a791aaa69860f1bd",
+      "normal_bitrate_patch.ld": "8b59ba6cc1f6e75efde663b01b39fa1851ce1670bba347a6c26d1e12a8ce84df"
+    }
+  },
+  {
+    "name": "normal_bitrate_menu_patch",
+    "bytes": 1660,
+    "sha256": "bed338ffa1d9db32a0f15349531225bb19df23116c68bf70b2c4257db9fc1204",
+    "symbols": {
+      "normal_bitrate_menu_entry": 29484032,
+      "normal_bitrate_menu_main": 29484132
+    },
+    "sources": {
+      "normal_bitrate_menu_entry.S": "4a2a82ccc6e5d00462e0a101b17da5990c7248b933faefafc114d60b8e0ce5b7",
+      "normal_bitrate_menu_patch.c": "a45c3fe3b8c0b30bc08200a7bda172e580a54f9c2626878e6bdc528cd14552e7",
+      "normal_bitrate_menu_patch.ld": "8b7360aee335fb149aff305740ec1ec73a3c21807fe2fe46f6bb5266eaf8576b"
+    }
+  }
+]

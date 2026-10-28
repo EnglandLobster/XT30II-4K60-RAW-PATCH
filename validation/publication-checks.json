@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "release": "v0.1.0-experimental",
+  "accepted_core_payloads": 9,
+  "all_binary_checksum_count": 11,
+  "rebuilt_core_payloads": 9,
+  "rebuilt_sha256_matches": true,
+  "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)",
+  "linker": "Homebrew LLD 22.1.8",
+  "offline_tests_passed": 60,
+  "original_failure_boundary_tests": 55,
+  "public_packaging_boundary_tests": 5,
+  "new_camera_operations": 0,
+  "historical_camera_firmware": "2.06",
+  "official_reference_dat_version": "2.04",
+  "official_reference_dat_is_not_flashing_target": true
+}

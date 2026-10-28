@@ -1,0 +1,307 @@
+{
+  "camera_operations": 0,
+  "status": "passed",
+  "payload": "rec_install_probe",
+  "dispatch_status": [
+    0,
+    0
+  ],
+  "scratch_page_sha256": "f6b5b4acc207ca5ecddaddb92f58ff42a4cb4069e71fadb840d95b501b08dace",
+  "calls": [
+    {
+      "native_protect": [
+        "0x6b95000",
+        "0x1000",
+        7
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "probe_entered_after_XN_clear": true
+    },
+    {
+      "native_protect": [
+        "0x1c1d000",
+        "0x1000",
+        5
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "native_protect": [
+        "0x2500000",
+        "0x100000",
+        3
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "native_protect": [
+        "0x2500000",
+        "0x100000",
+        1
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "native_protect": [
+        "0x2200000",
+        "0x100000",
+        7
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "native_protect": [
+        "0x2200000",
+        "0x100000",
+        5
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "native_protect": [
+        "0x6b95000",
+        "0x1000",
+        3
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    }
+  ],
+  "page_table_writes": [
+    {
+      "address": "0x9ea54",
+      "size": 4,
+      "value": "0x6b955b6"
+    },
+    {
+      "address": "0xa0474",
+      "size": 4,
+      "value": "0x1c1d7b6"
+    },
+    {
+      "address": "0x11c094",
+      "size": 4,
+      "value": "0x2516c16"
+    },
+    {
+      "address": "0x11c094",
+      "size": 4,
+      "value": "0x251ec16"
+    },
+    {
+      "address": "0x11c088",
+      "size": 4,
+      "value": "0x2216c06"
+    },
+    {
+      "address": "0x11c088",
+      "size": 4,
+      "value": "0x221ec06"
+    },
+    {
+      "address": "0x9ea54",
+      "size": 4,
+      "value": "0x6b955b7"
+    }
+  ],
+  "restored_in_emulation": [
+    "loader root",
+    "CMD callback",
+    "exact full L2 table",
+    "callee-saved registers",
+    "stack pointer"
+  ],
+  "allocations": [
+    "allocated"
+  ],
+  "private_execution": null,
+  "passive_hook_installation": {
+    "enabled": false,
+    "arena_bytes_retained": 12288,
+    "ui_table_permissions_restored": true
+  },
+  "limitations": "RTOS synchronization, affinity, cache and IPI operations are stubs; allocator probe also stubs malloc/free. No proof of live execution, SMP/cache behavior, normal shooting mode or camera rollback. Native loader loops forever on protection failure; do not auto-retry a live timeout."
+}

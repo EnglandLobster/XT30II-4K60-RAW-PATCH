@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-12T11:49:33.495653+00:00",
+  "status": "passed_128_second_uhd_59_94_h264_400_ram_recording_validation",
+  "scope": "This single continuous 128.128-second recording, original-file integrity, encoded timing and sampled image inspection. Not an unrestricted stability or persistent-firmware acceptance.",
+  "source": {
+    "source": "DSCF8532.MOV (original retained privately)",
+    "bytes": 6559539712,
+    "source_mtime_ns": 1791805016000000000,
+    "source_sha256": "e56b7b703d984fcf9e6e4b8b47782d63d673e44e1bbe4606d45ee9e7d23dae92",
+    "local_sha256": "e56b7b703d984fcf9e6e4b8b47782d63d673e44e1bbe4606d45ee9e7d23dae92",
+    "verified": true
+  },
+  "installation": "rec_install_probe_20261012T110954152369Z",
+  "camera_current_state": "Powered off; RAM instance retired; SD copied, verified and safely ejected.",
+  "user_recording_report": "Over two minutes; no errors, unexpected interruption or freeze.",
+  "video": {
+    "width": 3840,
+    "height": 2160,
+    "fps_rational": "60000/1001",
+    "fps": 59.94005994005994,
+    "duration_seconds": 128.128,
+    "frames": 7680,
+    "requested_bitrate_mbps": 400,
+    "actual_video_bitrate_bps": 406912844.28071934,
+    "actual_video_bitrate_mbps": 406.91284428071936,
+    "video_packet_bytes": 6517116114,
+    "codec": "h264",
+    "profile": "High",
+    "level": 61,
+    "pixel_format": "yuvj420p"
+  },
+  "integrity": {
+    "source_copy_sha256_verified": true,
+    "strict_video_decode_passed": true,
+    "strict_audio_decode_passed": true,
+    "all_7680_decoded_frame_hashes_unique": true,
+    "consecutive_exact_duplicate_frames": 0,
+    "timestamps": {
+      "packet_count": 7680,
+      "ordered_packet_pts_strictly_increasing": true,
+      "max_pts_deviation_from_60000_1001_grid_seconds": 3.3333333333333335e-07,
+      "all_pts_within_1us_of_grid": true,
+      "decoded_frame_count": 7680,
+      "decoded_time_base": "1001/60000",
+      "decoded_pts_tick_delta_values": [
+        1
+      ],
+      "decoded_frame_duration_tick_values": [
+        1
+      ],
+      "exact_consecutive_decoded_pts": true,
+      "limitations": "Timestamp continuity and frame hashes do not measure sensor exposure timing or prove every pair of frames contains independent scene motion."
+    },
+    "ffmpeg_warning_explanation": "Both logs only note that the two-channel PCM layout was inferred as stereo. No bitstream corruption warning or decode error was observed."
+  },
+  "large_file": {
+    "single_mov_file": true,
+    "bytes": 6559539712,
+    "gb_decimal": 6.559539712,
+    "exfat_source": true,
+    "larger_than_4GiB": true,
+    "extended_64bit_mdat": true,
+    "chunk_offset_width_bits": [
+      64,
+      64,
+      64
+    ],
+    "offsets_beyond_4GiB_present": true,
+    "all_offset_tables_within_file": true,
+    "structural_check": "container_layout.json"
+  },
+  "audio": {
+    "codec": "pcm_s24le",
+    "channels": 2,
+    "sample_rate": "48000",
+    "duration_seconds": 128.128,
+    "duration_matches_video": true,
+    "auditory_listening_test": false
+  },
+  "visual_inspection": {
+    "contact_sheet": "contact_sheet.jpg",
+    "overview_target_frames": [
+      0,
+      1500,
+      3000,
+      5040,
+      6000,
+      7650
+    ],
+    "additional_full_resolution_target_frame": 300,
+    "native_crops_target_frames": [
+      5040,
+      7650
+    ],
+    "crop_manifest": "frames/crop_manifest.json",
+    "result": "No previous rectangular block tearing or discontinuous block displacement observed in reviewed frames. Keyboard edges, monitor border, curtain and box edges remain spatially coherent.",
+    "coverage_limit": "Sparse visual sampling, not a visual review of every frame; several areas are out of focus."
+  },
+  "runtime_evidence": {
+    "post_record_capture": "movie_buffers_power_long400_after_recording_20261012T113425688064Z",
+    "post_record_mode": "UHD59.94/MOV-H264/400, type4/profile6, idle2, inactive roots ffffffff/ffffffff, stable read boundaries.",
+    "during_recording_active_slot_snapshot": false,
+    "power_baseline": "power_state_rec_baseline_20261012T112210251207Z.json",
+    "power_after_recording": "power_state_after_long400_20261012T113513402747Z.json",
+    "power_observation": "Raw UI executable and five warning-state bytes were all zero before and after. No continuous telemetry and no Celsius measurement; this does not diagnose the earlier idle blackout."
+  },
+  "evidence_files": [
+    "acquisition.json",
+    "DSCF8532_audit/report.json",
+    "DSCF8532_audit/ffprobe.json",
+    "DSCF8532_audit/decoded.framemd5",
+    "all_streams.json",
+    "timing_validation.json",
+    "container_layout.json",
+    "audio_decode.json",
+    "ejection.json"
+  ],
+  "remaining": [
+    "Earlier extended-idle black screen and failure to wake with half-shutter remain unexplained.",
+    "Longer duration, repeated start/stop and controlled idle/wake behavior are not established by one 128-second recording.",
+    "Changes remain temporary RAM modifications; persistent packaging is not implemented.",
+    "Frame hashes and timestamps do not directly measure sensor exposure cadence; image quality has only sampled visual coverage."
+  ]
+}

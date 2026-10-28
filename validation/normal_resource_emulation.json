@@ -1,0 +1,541 @@
+{
+  "status": "passed",
+  "camera_operations": 0,
+  "payload_sha256": "48d98a874f20e93c6ea0592115e99575de3b205cff07672c691f6a38916f8727",
+  "mapper": {
+    "before": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "after": [
+      0,
+      1,
+      2,
+      6,
+      5,
+      6,
+      7
+    ],
+    "changed_route_types": [
+      4
+    ]
+  },
+  "native_allocator": [
+    {
+      "profile": 4,
+      "allocated_handles": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "distinct_descriptors": 1,
+      "descriptors": [
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x3",
+          "0x669cc000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ]
+      ]
+    },
+    {
+      "profile": 6,
+      "allocated_handles": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "distinct_descriptors": 8,
+      "descriptors": [
+        [
+          "0x0",
+          "0xe11c000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0xf7c9000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x10e76000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x12523000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x13bd0000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x1527d000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x1692a000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x17fd7000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ]
+      ]
+    },
+    {
+      "profile": 7,
+      "allocated_handles": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "distinct_descriptors": 8,
+      "descriptors": [
+        [
+          "0x0",
+          "0xe11c000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0xf7c9000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x10e76000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x12523000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x13bd0000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x1527d000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x1692a000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ],
+        [
+          "0x0",
+          "0x17fd7000",
+          "0x16ad000",
+          "0x2b00",
+          "0x2000",
+          "0x870",
+          "0x0"
+        ]
+      ]
+    }
+  ],
+  "cases": 10,
+  "results": [
+    {
+      "action": "probe",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          5
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x2219ed0",
+          4,
+          "0xe3a00006"
+        ]
+      ],
+      "page_table_writes": 4
+    },
+    {
+      "action": "restore",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          5
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x2219ed0",
+          4,
+          "0xe3a00004"
+        ]
+      ],
+      "page_table_writes": 4
+    },
+    {
+      "action": "apply",
+      "failure": "word",
+      "status": "0x80000002",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "phase",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "recording",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "fps",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "mapping",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "protect",
+      "status": "0x80000003",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2
+    },
+    {
+      "action": "apply",
+      "failure": "restore",
+      "status": "0x80000004",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          7
+        ],
+        [
+          "0x2200000",
+          "0x100000",
+          5
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x2219ed0",
+          4,
+          "0xe3a00006"
+        ]
+      ],
+      "page_table_writes": 3
+    }
+  ],
+  "limitations": "RTOS/cache/IPI stubs; no DMA timing, sensor throughput or image-quality simulation."
+}

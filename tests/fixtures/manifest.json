@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "model": "X-T30 II",
+  "capture_firmware": "2.06",
+  "profiles": {
+    "cold_jig": {
+      "phase": "before retained REC installation; heap code page remains RW/XN",
+      "captures": {
+        "00e20040/396": {
+          "file": "loader_table.bin",
+          "sha256": "52a08d5b2e8850bbe25d9f26672eacdaa2b2f0b207e6542cc00a68cc7f218acf",
+          "acquired_from": "evidence/offline_20261011/window_00e20040_20261011T170340172656Z.bin",
+          "acquisition_utc": "20261011T170340172656Z",
+          "acquisition_reason": "Read full bounded descriptor list; initial record matches original loading table"
+        },
+        "0009e800/1024": {
+          "file": "scratch_l2.bin",
+          "sha256": "6e66785b9423b7d274ed1033c0e346bf7242374f621b6c45565bd899ee172e5d",
+          "acquired_from": "evidence/offline_20261011/window_0009e800_20261011T170440361334Z.bin",
+          "acquisition_utc": "20261011T170440361334Z",
+          "acquisition_reason": "Live L1 points here; inspect original mapping granularity for reserved debug-log first page"
+        },
+        "000a0400/1024": {
+          "file": "cold_heap_l2.bin",
+          "sha256": "bf04d153276583ecfa49b7f314940841935258896add8a1f5db0209908b0a11a",
+          "acquired_from": "evidence/offline_20261011/window_000a0400_20261012T155850906345Z.bin",
+          "acquisition_utc": "20261012T155850906345Z",
+          "acquisition_reason": "Fresh matched-wake Jig: native private-exec/free restored heap table; exact current capture for installer emulation"
+        }
+      }
+    },
+    "retained_rec": {
+      "phase": "completed inactive REC lifecycle v2; resident code RX, state RW/XN",
+      "captures": {
+        "00e20040/396": {
+          "file": "loader_table.bin",
+          "sha256": "52a08d5b2e8850bbe25d9f26672eacdaa2b2f0b207e6542cc00a68cc7f218acf",
+          "acquired_from": "evidence/offline_20261011/window_00e20040_20261011T170340172656Z.bin",
+          "acquisition_utc": "20261011T170340172656Z",
+          "acquisition_reason": "Read full bounded descriptor list; initial record matches original loading table"
+        },
+        "0009e800/1024": {
+          "file": "scratch_l2.bin",
+          "sha256": "6e66785b9423b7d274ed1033c0e346bf7242374f621b6c45565bd899ee172e5d",
+          "acquired_from": "evidence/offline_20261011/window_0009e800_20261011T170440361334Z.bin",
+          "acquisition_utc": "20261011T170440361334Z",
+          "acquisition_reason": "Live L1 points here; inspect original mapping granularity for reserved debug-log first page"
+        },
+        "01c1d000/836": {
+          "file": "retained_code.bin",
+          "sha256": "828415bcb157521b5c9908e1860b225697f6738c4cca69832e89a53b1209496a",
+          "acquired_from": "evidence/offline_20261011/window_01c1d000_20261011T183620646555Z.bin",
+          "acquisition_utc": "20261011T183620646555Z",
+          "acquisition_reason": "Revision 2 state identity and phase read back intact after no-reboot transition; verify exact installed code SHA256 before using retained allocation."
+        },
+        "01c1e000/4096": {
+          "file": "retained_state.bin",
+          "sha256": "43cd2eadacf5f3beee56a6448a8d0c33f40e6f04746ee2f4e8cdb58f9362c84f",
+          "acquired_from": "evidence/offline_20261011/window_01c1e000_20261011T184218371051Z.bin",
+          "acquisition_utc": "20261011T184218371051Z",
+          "acquisition_reason": "Confirmed live revision2 owned data page, exact allocation; snapshot unused tail for normal-mode one-shot execution"
+        },
+        "000a0400/1024": {
+          "file": "retained_heap_l2.bin",
+          "sha256": "b2169cc6e6f2fe098cd21e75a28bd1ed7a08e62b6e6aa379f6ca58c71eeb463b",
+          "acquired_from": "evidence/offline_20261011/window_000a0400_20261011T183742567922Z.bin",
+          "acquisition_utc": "20261011T183742567922Z",
+          "acquisition_reason": "Previously proven heap coarse table; verify code and data page permissions"
+        },
+        "0009c800/1024": {
+          "file": "retained_rule_l2.bin",
+          "sha256": "5119793a5fb4d540d68a8b8b5f3221e3e87667c1ef0acc27289ff62f9ae97110",
+          "acquired_from": "evidence/offline_20261011/window_0009c800_20261011T184218444614Z.bin",
+          "acquisition_utc": "20261011T184218444614Z",
+          "acquisition_reason": "Current L1[0x13] read back as 0009c801; full bounded coarse table for permission change and exact restoration validation"
+        }
+      }
+    }
+  }
+}

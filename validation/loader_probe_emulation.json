@@ -1,0 +1,102 @@
+{
+  "camera_operations": 0,
+  "status": "passed",
+  "dispatch_status": [
+    0,
+    0
+  ],
+  "scratch_page_sha256": "b4578560bbeb6375e70414bf7ddcbf6ad6d6e063ec984f8269fcddb22a6d930b",
+  "calls": [
+    {
+      "native_protect": [
+        "0x6b95000",
+        "0x1000",
+        7
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    },
+    {
+      "probe_entered_after_XN_clear": true
+    },
+    {
+      "native_protect": [
+        "0x6b95000",
+        "0x1000",
+        3
+      ]
+    },
+    {
+      "stub": "semaphore_lock"
+    },
+    {
+      "stub": "multicore_quiesce_and_clean"
+    },
+    {
+      "stub": "task_affinity_save"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "cache_maintenance"
+    },
+    {
+      "stub": "kernel_TLB_IPI"
+    },
+    {
+      "stub": "instruction_cache_invalidate"
+    },
+    {
+      "stub": "task_affinity_restore"
+    },
+    {
+      "stub": "semaphore_unlock"
+    }
+  ],
+  "page_table_writes": [
+    {
+      "address": "0x9ea54",
+      "size": 4,
+      "value": "0x6b955b6"
+    },
+    {
+      "address": "0x9ea54",
+      "size": 4,
+      "value": "0x6b955b7"
+    }
+  ],
+  "restored_in_emulation": [
+    "loader root",
+    "CMD callback",
+    "exact full L2 table",
+    "callee-saved registers",
+    "stack pointer"
+  ],
+  "limitations": "RTOS synchronization, affinity, cache and IPI operations are stubs. No proof of live execution, SMP/cache behavior, normal shooting mode or camera rollback. Native loader loops forever on protection failure; do not auto-retry a live timeout."
+}

@@ -1,0 +1,17 @@
+.venv*/
+__pycache__/
+*.py[cod]
+.DS_Store
+src/offline_20261011/
+src/normal_route_20261012/
+tests/fixtures/*.bin
+build/
+dist/
+*.DAT
+*.dat
+*.MOV
+*.mov
+*.mp4
+*.pem
+*.key
+.env*

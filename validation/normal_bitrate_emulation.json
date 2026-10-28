@@ -1,0 +1,393 @@
+{
+  "status": "passed",
+  "camera_operations": 0,
+  "cases": 16,
+  "payload_sha256": "9ef75f9c28cb8757e6b865c70c6d07c2d0f8ef934daa39c1f7099a1b3a8ffda6",
+  "fixture": "<PRIVATE_RESEARCH>/analysis/normal_route_20261012/normal_resource_apply_20261012T074311333335Z",
+  "results": [
+    {
+      "action": "probe",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e13c4",
+          4,
+          "0x0"
+        ]
+      ],
+      "page_table_writes": 34,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "restore",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e13c4",
+          4,
+          "0x1"
+        ]
+      ],
+      "page_table_writes": 34,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "word",
+      "status": "0x80000002",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "phase",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "protect",
+      "status": "0x80000003",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "restore",
+      "status": "0x80000004",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e13c4",
+          4,
+          "0x0"
+        ]
+      ],
+      "page_table_writes": 18,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "rw_descriptor",
+      "status": "0x80000004",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 18,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "recording",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "active_context",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "profile",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "fps_fix",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "resource_fix",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "selected_fps",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "cached_fps",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "mp4",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    }
+  ],
+  "limitations": "Original ARM loader, dispatcher, kernel and payload; RTOS/cache/IPI are stubbed. No sensor/encoder or storage validation."
+}

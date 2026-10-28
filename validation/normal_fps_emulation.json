@@ -1,0 +1,202 @@
+{
+  "status": "passed",
+  "camera_operations": 0,
+  "cases": 7,
+  "payload_sha256": "d137d63b63cb0441838448b7d7a151da0b4173edde8921f6a8d78459a45a5c2a",
+  "results": [
+    {
+      "action": "probe",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e1788",
+          4,
+          "0x7ffffffe"
+        ]
+      ],
+      "page_table_writes": 34,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "restore",
+      "failure": null,
+      "status": "0x2",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e1788",
+          4,
+          "0x3"
+        ]
+      ],
+      "page_table_writes": 34,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "word",
+      "status": "0x80000002",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "phase",
+      "status": "0x80000001",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "protect",
+      "status": "0x80000003",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [],
+      "page_table_writes": 2,
+      "owned_output_writes": 0
+    },
+    {
+      "action": "apply",
+      "failure": "restore",
+      "status": "0x80000004",
+      "protect_calls": [
+        [
+          "0x1c1e000",
+          "0x1000",
+          7
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          3
+        ],
+        [
+          "0x13e0000",
+          "0x10000",
+          1
+        ],
+        [
+          "0x1c1e000",
+          "0x1000",
+          3
+        ]
+      ],
+      "target_writes": [
+        [
+          "0x13e1788",
+          4,
+          "0x7ffffffe"
+        ]
+      ],
+      "page_table_writes": 18,
+      "owned_output_writes": 0
+    }
+  ],
+  "limitations": "RTOS, affinity, cache and IPI stubs; real SMP and capture behavior require camera validation."
+}

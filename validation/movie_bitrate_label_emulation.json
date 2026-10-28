@@ -1,0 +1,222 @@
+{
+  "status": "passed",
+  "camera_operations": 0,
+  "label_sha256": "a91f81228fabaebd44c18faeb7c4654cca17aee77b7696b618ded38fd0ead0d2",
+  "font_fingerprint_sha256": "c6bccb4a5bd190c1c89c82852709b54e805886dfa3db2997c01bcd29832b6030",
+  "native_accessor_comparisons": 14388,
+  "languages": [
+    {
+      "index": 0,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 1,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 2,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 3,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 4,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 5,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 6,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 7,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 8,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 9,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 10,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 11,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 12,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 13,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 14,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 15,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 16,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 17,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 18,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 19,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 20,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 21,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 22,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 23,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 24,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 25,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 26,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 27,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 28,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 29,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 30,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 31,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 32,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 33,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    },
+    {
+      "index": 34,
+      "movie_headers": 8,
+      "ordinary_iso_unchanged": true,
+      "language_bank_unchanged": true
+    }
+  ],
+  "native_width_override_preserved": true,
+  "stack_and_callee_saved_registers_preserved": true,
+  "limitations": "Native getters, not full graphics rasterization or live instruction-cache/SMP validation."
+}

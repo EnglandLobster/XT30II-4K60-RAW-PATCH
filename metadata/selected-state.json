@@ -1,0 +1,40 @@
+{
+  "selected_profile": 6,
+  "resource_state_type_flags": [
+    2,
+    4,
+    1,
+    0
+  ],
+  "route_classifier_inputs": [
+    7,
+    6,
+    3,
+    0
+  ],
+  "frame_pool_inputs": [
+    3,
+    0
+  ],
+  "active_context_roots": [
+    "0x0",
+    "0x0"
+  ],
+  "autoset": {
+    "pixel": 0,
+    "fps": 5,
+    "bitrate": 0,
+    "compression": 0,
+    "codec": 1,
+    "flog_hlg": 1,
+    "file_format_codec": 1
+  },
+  "boundary_stability": {
+    "autoset": true,
+    "resource_state_type_flags": true,
+    "selected_resource_profile": true,
+    "active_context_roots": true
+  },
+  "atomic": false,
+  "active_slot0": null
+}
