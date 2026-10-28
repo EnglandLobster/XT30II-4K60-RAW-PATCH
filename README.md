@@ -1,8 +1,8 @@
-# X-T30 II · 4K60 / 400Mbps RAM Patch
+# XT30II-4K60-RAW-PATCH
 
 **富士 X-T30 II 的实验性内录补丁：3840×2160、59.94fps、MOV / H.264、400Mbps。**
 
-[English](README.en.md) · [下载发布包](https://github.com/EnglandLobster/xt30ii-4k60/releases) · [完整安装说明](docs/INSTALL.md) · [验证与限制](docs/VALIDATION.md) · [源码与构建](docs/DEVELOPMENT.md)
+[English](README.en.md) · [下载发布包](https://github.com/EnglandLobster/XT30II-4K60-RAW-PATCH/releases) · [完整安装说明](docs/INSTALL.md) · [验证与限制](docs/VALIDATION.md) · [源码与构建](docs/DEVELOPMENT.md)
 
 这个项目公开我们已经完成真机录像验收的 **RAM 临时补丁**、ARM 源码和安装工具。完整电影菜单增加 400Mbps 项；帧率策略、独立录像缓冲配置和码率规则一起安装。它需要电脑通过 USB/Jig 注入，关机或自动关机唤醒后重新安装。
 
@@ -22,8 +22,8 @@
 推荐先读[安装说明](docs/INSTALL.md)。需要 Python 3.11+、libusb、支持 USB 数据传输的线、已确认的 X-T30 II / 2.06，以及自行取得的精确版本参考 DAT。400Mbps 约等于每秒 50MB，SD 卡需要持续写入能力和足够空间。
 
 ```sh
-git clone https://github.com/EnglandLobster/xt30ii-4k60.git
-cd xt30ii-4k60
+git clone https://github.com/EnglandLobster/XT30II-4K60-RAW-PATCH.git
+cd XT30II-4K60-RAW-PATCH
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt

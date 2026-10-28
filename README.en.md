@@ -1,10 +1,10 @@
-# X-T30 II 4K60 / 400Mbps RAM Patch
+# XT30II-4K60-RAW-PATCH
 
 **Current release: v0.1.1-experimental.**
 
 Experimental USB/Jig RAM patch for the **Fujifilm X-T30 II, camera firmware 2.06**. Records 3840×2160 at 60000/1001 fps (59.94p), MOV / H.264, with a selectable 400Mbps option and correctly scoped menu label.
 
-[中文](README.md) · [Installation (中文)](docs/INSTALL.md) · [Releases](https://github.com/EnglandLobster/xt30ii-4k60/releases)
+[中文](README.md) · [Installation (中文)](docs/INSTALL.md) · [Releases](https://github.com/EnglandLobster/XT30II-4K60-RAW-PATCH/releases)
 
 A continuous 128.128-second, 7,680-frame recording measured about 406.9Mbps video bitrate and passed video/audio decoding. Independent buffer allocation fixes block tearing in the initial resource configuration. The nine core ARM binaries match the accepted research artifacts byte for byte.
 
@@ -15,8 +15,8 @@ This release is **RAM-only**. It requires a computer on each fresh installation.
 Use Python 3.11+ and system libusb. Hardware acceptance was performed on macOS; Linux/Windows live installation has not been validated. Obtain the exact official X-T30 II **2.04 reference DAT** yourself; its SHA256 is checked. This file supplies offline reference code only: **do not downgrade or flash it to the 2.06 camera**.
 
 ```sh
-git clone https://github.com/EnglandLobster/xt30ii-4k60.git
-cd xt30ii-4k60
+git clone https://github.com/EnglandLobster/XT30II-4K60-RAW-PATCH.git
+cd XT30II-4K60-RAW-PATCH
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
