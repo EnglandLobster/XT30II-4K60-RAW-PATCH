@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'tools'),str(ROOT/'src'),str(ROOT)]
 import prepare
 import camera_checks
+import install as wizard
 
 class PublicPackageTests(unittest.TestCase):
     def test_reference_relocation_requires_the_expected_original_word(self):
@@ -45,5 +46,32 @@ class PublicPackageTests(unittest.TestCase):
     def test_changed_resident_code_retires_previous_acceptance(self):self.scenario(bad_code=True)
     def test_close_failure_does_not_publish_acceptance(self):self.scenario(failed_close=True)
     def test_fresh_readback_publishes_acceptance_after_close(self):self.scenario()
+
+class MoviePolicyCheckpointTests(unittest.TestCase):
+    def test_remaining_policies_wait_for_29_97_200_confirmation(self):
+        events=[]
+        def run(script,*args):
+            events.append((script,args[args.index('--action')+1]))
+        def answer(prompt):
+            self.assertEqual(events,[('normal_fps_patch.py','probe'),('normal_fps_patch.py','apply')])
+            self.assertIn('29.97P',prompt)
+            self.assertIn('200Mbps',prompt)
+            self.assertIn('退出菜单',prompt)
+            events.append(('confirmed','29.97/200'))
+            return 'YES'
+        with patch.object(wizard,'run',side_effect=run),patch('builtins.input',side_effect=answer):
+            wizard.apply_movie_policies(Path('current'))
+        self.assertEqual(events[2:5],[('confirmed','29.97/200'),('normal_resource_patch.py','probe'),('normal_resource_patch.py','apply')])
+        self.assertEqual(events[-2:],[('normal_bitrate_menu_patch.py','probe'),('normal_bitrate_menu_patch.py','apply')])
+
+    def test_declining_checkpoint_never_starts_resource_or_bitrate_policies(self):
+        with patch.object(wizard,'run') as run,patch('builtins.input',return_value='NO'):
+            with self.assertRaises(SystemExit):wizard.apply_movie_policies(Path('current'))
+        self.assertEqual([call.args[0] for call in run.call_args_list],['normal_fps_patch.py']*2)
+
+    def test_failed_fps_apply_stops_before_checkpoint_or_remaining_policies(self):
+        with patch.object(wizard,'run',side_effect=[None,RuntimeError('apply failed')]),patch('builtins.input') as answer:
+            with self.assertRaisesRegex(RuntimeError,'apply failed'):wizard.apply_movie_policies(Path('current'))
+        answer.assert_not_called()
 
 if __name__=='__main__':unittest.main()

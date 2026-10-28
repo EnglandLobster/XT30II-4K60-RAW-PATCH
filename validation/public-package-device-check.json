@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "source_release": "v0.1.0-experimental",
+  "model": "X-T30 II",
+  "firmware_profile": "2.06",
+  "public_zip_sha256": "456c9601afc918666f5c73473cf120f22b7da0a758d430f4bc5a050817eda1a8",
+  "cold_checks_passed": 36,
+  "rec_readback_windows_passed": 19,
+  "resource_fingerprints_passed": 8,
+  "all_four_policies_probe_apply": "passed_and_readback_verified",
+  "original_wizard_uninterrupted": false,
+  "interruption": "After FPS apply, menu fps=5 (59.94), runtime native fps=4 (29.97), bitrate=200; resource guard stopped before staging.",
+  "continuation": "User reselected UHD29.97/200 and closed the menu; the same published manual commands then completed the remaining three policies.",
+  "guards_and_payloads_changed": false,
+  "final_selected_state": "matches metadata/selected-state.json",
+  "menu_59_94_400_user_confirmed": true,
+  "usb_session_closed": true,
+  "new_recording_this_run": false,
+  "persistent_writes": false,
+  "checkpoint_fix_release": "v0.1.1-experimental",
+  "checkpoint_fix_validation": "offline regression; no new physical installation for the host change"
+}

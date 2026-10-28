@@ -10,6 +10,21 @@ def run(name,*args):
     subprocess.run([sys.executable,str(ROOT/'src'/name),*map(str,args)],check=True,cwd=ROOT)
 def confirm(text):
     if input(text+'\nType YES to continue: ').strip()!='YES':raise SystemExit('Stopped. Cold-restart the camera before beginning another installation.')
+
+def apply_movie_policies(installation):
+    for action in ('probe','apply'):
+        run('normal_fps_patch.py',installation,'--action',action,'--execute')
+    confirm(
+        '帧率已解锁，机身菜单可能显示 59.94P。缓冲与码率策略尚未安装，请勿录制 4K60。\n'
+        '请重新选择 UHD 29.97P／MOV H.264／LongGOP／200Mbps，然后退出菜单。'
+        '保持开机和 USB 连接；完成后输入 YES，继续安装剩余三项。\n'
+        'FPS is unlocked; the menu may now show 59.94P. Do not record 4K60 yet. '
+        'Re-select UHD29.97 / MOV H264 / LongGOP / 200Mbps and close all menus. '
+        'Keep power and USB connected. Confirm this setting before the remaining three policies.')
+    for script,extra in [('normal_resource_patch.py',[OUT/'resource_fingerprints.json']),('normal_bitrate_patch.py',[]),('normal_bitrate_menu_patch.py',[])]:
+        for action in ('probe','apply'):
+            run(script,installation,*extra,'--action',action,'--execute')
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--execute',action='store_true');a=ap.parse_args()
     if not a.execute:print('No camera access. See docs/INSTALL.md, then use --execute for the interactive installation.');return
@@ -32,8 +47,7 @@ def main():
         print('USB handoff result was uncertain. No retry will be sent. The next step verifies the resulting state.')
     confirm('Camera has normal live view. WITHOUT switching power, sleeping, or removing the battery: disconnect USB once and reconnect it. Close all menus and retain UHD29.97/200. Confirm normal live view and no restart.')
     verify_rec(installation);fingerprints()
-    for script,extra in [('normal_fps_patch.py',[]),('normal_resource_patch.py',[OUT/'resource_fingerprints.json']),('normal_bitrate_patch.py',[]),('normal_bitrate_menu_patch.py',[])]:
-        for action in ('probe','apply'):run(script,installation,*extra,'--action',action,'--execute')
+    apply_movie_policies(installation)
     print('All four policies installed and read back. Select UHD59.94 / MOV H264 / 400Mbps in the full movie menu, then close the menu.')
     confirm('59.94P and 400Mbps are selectable and retained. Menu closed, recording stopped. Read back the selected state?')
     before=set(OUT.glob('movie_buffers_public_selected_*'))

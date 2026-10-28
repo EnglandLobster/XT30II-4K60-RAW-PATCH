@@ -1,5 +1,7 @@
 # X-T30 II 4K60 / 400Mbps RAM Patch
 
+**Current release: v0.1.1-experimental.**
+
 Experimental USB/Jig RAM patch for the **Fujifilm X-T30 II, camera firmware 2.06**. Records 3840×2160 at 60000/1001 fps (59.94p), MOV / H.264, with a selectable 400Mbps option and correctly scoped menu label.
 
 [中文](README.md) · [Installation (中文)](docs/INSTALL.md) · [Releases](https://github.com/EnglandLobster/xt30ii-4k60/releases)
@@ -28,7 +30,7 @@ These commands never access USB. Read the detailed installation guide before run
 python tools/install.py --execute
 ```
 
-The interactive installer asks for physical confirmations, verifies a fresh cold Jig baseline, runs the accepted private-memory probe, installs the label/lifecycle hook, retires the old USB transport during the REC transition, verifies normal live view and retained debug, then probes/applies the four movie policies in order. All guards and exact readbacks remain enabled. Set the camera initially to UHD29.97, MOV/H264 LongGOP, 200Mbps; keep it idle with menus closed until all policies are installed.
+The interactive installer asks for physical confirmations, verifies a fresh cold Jig baseline, runs the accepted private-memory probe, installs the label/lifecycle hook, retires the old USB transport during the REC transition, verifies normal live view and retained debug, then probes/applies the four movie policies in order. **After the FPS policy, it pauses: re-select UHD29.97 / 200Mbps and close the menu, then type YES before the remaining three policies.** Select 59.94p / 400Mbps only after all policies are installed. All guards and exact readbacks remain enabled. Set the camera initially to UHD29.97, MOV/H264 LongGOP, 200Mbps; keep it idle with menus closed until all policies are installed.
 
 After installation select UHD59.94 / MOV H264 / 400Mbps in the full movie menu. Record and check a short original clip before relying on the setup. LCD preview stutter was observed during recording; two inspected original clips had continuous timestamps, no exact duplicate frames and no decode errors. Extended thermal endurance remains untested.
 
@@ -38,6 +40,6 @@ Stop recording, wait for card activity to finish, disconnect USB, power off, rem
 
 ## Development and license
 
-[Development](docs/DEVELOPMENT.md) covers building, hashes and offline tests. The packaging entry points have been tested offline; no new camera installation was performed for this publication. Historical camera acceptance is documented in [validation](docs/VALIDATION.md).
+[Development](docs/DEVELOPMENT.md) covers building, hashes and offline tests. The public v0.1.0 download completed a camera installation on 2026-10-29 after manually re-selecting 29.97p / 200Mbps and continuing the documented steps. v0.1.1 adds that checkpoint to the guide; this host-only change is covered by offline regression and has not been installed again on the camera. Recording and device acceptance are documented in [validation](docs/VALIDATION.md).
 
 MIT for original code. Vendored fffw USB transport retains its original MIT license and pinned revision; see [THIRD_PARTY.md](THIRD_PARTY.md). Official firmware, decoded firmware code, private RAM captures and recordings are excluded. Reference files are reconstructed locally and never count as fresh device evidence.

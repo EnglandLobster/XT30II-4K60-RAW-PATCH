@@ -1,6 +1,6 @@
 # 安装与日常使用
 
-适用：富士 X-T30 II，**机身固件 2.06**，实验性 RAM 补丁 v0.1.0。真机流程在 macOS 验收；Linux/Windows 的 USB 驱动配置仅作准备参考，本项目尚未完成这些系统的上机验收。
+适用：富士 X-T30 II，**机身固件 2.06**，实验性 RAM 补丁 v0.1.1。真机流程在 macOS 验收；Linux/Windows 的 USB 驱动配置仅作准备参考，本项目尚未完成这些系统的上机验收。
 
 ## 1. 准备电脑和参考数据
 
@@ -58,8 +58,10 @@ python tools/install.py --execute
 4. 安装禁用状态的生命周期 hook 与电影菜单字体标签；验证禁用 hook 的 UI 消费。
 5. 请求一次切换正常 REC，随即退役旧 USB 会话，不在旧会话上重试。
 6. **出现正常取景后，按提示拔插一次 USB，期间不要关机、取电池或让相机自动关机。** 输入 YES 确认正常取景和未重启；工具读取新的 REC 状态与资源指纹。
-7. 在 29.97P/200Mbps、停止录像、菜单关闭状态，依次对 FPS、独立缓冲、码率、菜单四项策略执行 probe 再 apply。每次都核验目标范围、权限恢复和驻留代码。
-8. 按提示在完整电影菜单选 **UHD59.94P / MOV H.264 / 400Mbps**，退出菜单，输入 YES。工具确认最终设置和稳定边界。
+7. 对 FPS 策略执行 probe/apply，解锁帧率。
+8. **向导在此暂停：重新选择 UHD 29.97P／MOV H.264／LongGOP／200Mbps，退出菜单，再输入 YES。** 此时可能看到 59.94P，但独立缓冲与码率尚未安装，请勿录制 4K60，也不要关机或重插 USB。这个暂停点来自 v0.1.0 的真机中断记录；拒绝确认就停止，不执行剩余策略。
+9. 在已恢复的 29.97P/200Mbps、停止录像、菜单关闭状态，依次对独立缓冲、码率、菜单三项策略执行 probe/apply。原有设置守卫、目标范围、权限恢复和驻留代码检查保持有效。
+10. 全部安装完成后，按提示在完整电影菜单选 **UHD59.94P / MOV H.264 / 400Mbps**，退出菜单，输入 YES。工具确认最终设置和稳定边界。
 
 输入 YES 是对当前机身状态的人工确认，不能从旧日志复制。安装脚本不会自动启动录像。若 USB 切换返回超时，但记录已进入 handoff，工具只在人工确认正常取景后继续**只读核验**，不会重发切换请求；核验失败即停止。
 
@@ -89,6 +91,11 @@ python tools/camera_checks.py fingerprints --execute
 FINGERPRINTS=src/normal_route_20261012/resource_fingerprints.json
 python src/normal_fps_patch.py "$INSTALLATION" --action probe --execute
 python src/normal_fps_patch.py "$INSTALLATION" --action apply --execute
+```
+
+**现在重新选择 UHD 29.97P／200Mbps 并退出菜单，再运行下方命令。** 即使先前已选过也要在帧率解锁后重新确认；当前不要录制 4K60。保持相机开机和 USB 连接。v0.1.0 真机试用时在此看到菜单为 59.94P/200Mbps，原守卫正确阻止了后续安装；恢复 29.97P/200Mbps 后即可继续。
+
+```sh
 python src/normal_resource_patch.py "$INSTALLATION" "$FINGERPRINTS" --action probe --execute
 python src/normal_resource_patch.py "$INSTALLATION" "$FINGERPRINTS" --action apply --execute
 python src/normal_bitrate_patch.py "$INSTALLATION" --action probe --execute
@@ -123,6 +130,7 @@ python src/capture_movie_buffer_state.py "$INSTALLATION" "$FINGERPRINTS" --label
 | 找不到一台 04cb:ff80 | 确认数据线、Jig 按键开机与 USB 权限；普通相机 USB 模式不能替代 |
 | 冷机指纹、页表或分配地址不匹配 | 当前状态/版本不符合验收条件；停止，保留日志并冷启动 |
 | 超时、响应不完整或黑屏 | 不重试、不执行额外清理命令；先停止流程，结束写卡后断开 USB 并冷启动 |
+| 帧率已解锁，但提示要求 29.97/200 | 重新选择 UHD 29.97P／MOV H.264／LongGOP／200Mbps 并退出菜单；保持开机，按本页手动流程从资源策略 probe 续接，勿重跑整个安装器 |
 | 400Mbps 消失 | 检查是否发生关机或自动关机唤醒；从新冷启动重新安装 |
 | 卡写入不足或录制中断 | 停止录制，换持续写入能力足够的卡并检查原片；本项目不解除温度或原厂保护 |
 

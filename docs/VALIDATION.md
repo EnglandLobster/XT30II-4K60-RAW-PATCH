@@ -8,13 +8,15 @@
 
 最初的块状撕裂已追到原资源配置的缓冲描述符重叠，采用本机独立缓冲配置后原片检查正常。LCD 实时预览卡顿仍待进一步定位。
 
+2026-10-29 从 GitHub 下载的 v0.1.0 公开包又完成一次机身安装，36 项冷机检查、19 窗口 REC 读回、8 项资源指纹及四项策略 probe/apply 通过。原样向导在 FPS 解锁后因菜单设置为 59.94P/200Mbps 停在资源策略守卫；手动重选 29.97P/200Mbps 后按随包文档续装成功，最终 59.94P/400Mbps 设置与 `metadata/selected-state.json` 完全一致。该轮未录制新原片。见 [公开包上机摘要](../validation/public-package-device-check.json)。
+
 ## 本次发布验证
 
 9 个核心 ARM 文件保持已验收 SHA256；源码覆盖 C、汇编及链接脚本。重新编译验证在 macOS 使用 Apple clang 和 LLD/LLVM 二进制工具，9 个输出逐字节匹配。完整包另带两个早期诊断载荷，其哈希也列入 SHA256SUMS。
 
 公开包已从单独目录、独立 Python 虚拟环境、用户提供的精确 DAT 重建参考并运行测试。测试覆盖超时后禁止续发、完整拒绝的恢复、原生分配/权限失败、安装阶段指纹/参数检查，以及四项策略的目标范围和恢复语义。以 [发布验证结果](../validation/publication-checks.json) 为准。
 
-`validation/*_emulation.json` 是历史离线 ARM/主机模拟报告，原厂 RTOS、缓存/IPI、部分外设被明确建模。`metadata/reference-recipes.json` 和 `tests/fixtures/manifest.json` 是离线样本配方，不构成当前机身的现场核验。新的入口把冷机、正常取景与最终选择作为显式阶段；本次发布没有进行新的物理机身安装，完整向导还需要社区在同型号/版本复核。
+`validation/*_emulation.json` 是历史离线 ARM/主机模拟报告，原厂 RTOS、缓存/IPI、部分外设被明确建模。`metadata/reference-recipes.json` 和 `tests/fixtures/manifest.json` 是离线样本配方，不构成当前机身的现场核验。v0.1.1 仅调整主机向导：FPS apply 后增加重选 29.97P/200Mbps 的中英文确认点，再调用原资源策略守卫；取消确认、FPS 失败均不进入剩余策略。新增 3 项顺序/中止回归，完整测试共 63 项通过。这个主机改动未再次进行物理机身安装；设备端载荷及此前真机验收保持不变。
 
 ## 尚未完成
 

@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib,json,subprocess,zipfile
 ROOT=Path(__file__).resolve().parents[1]
-TAG='v0.1.0-experimental'
+TAG='v0.1.1-experimental'
 def main():
     files=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0');files=[f for f in files if f]
     if not files:raise SystemExit('No tracked release files')
